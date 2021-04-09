@@ -1,0 +1,46 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+
+{
+    "username" : "minhtoann",
+    "password" :"123123"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZlN2E0YTdlZjgzMDE2MDA1MGVlYjIiLCJpYXQiOjE2MTc4NTM3MjF9.0oKjIG4fupTJSOYFz03V74Y7ye-i4_wa1rF6426SNpQ
+
+
+{
+    "title": "JAVASCR",
+    "description": "reactt",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+### 
+
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZhZGQ2ODhkODJmZjBmYjg3YmYxZjQiLCJpYXQiOjE2MTc2MTYyMzJ9.6dGmYsn3P9uze5hbs-_l639BSWU-iTc4ppv2XdQh1MM
+
+###
+
+PUT http://localhost:5000/api/posts/606addd88d82ff0fb87bf1f5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZhZGQ2ODhkODJmZjBmYjg3YmYxZjQiLCJpYXQiOjE2MTc2MTYyMzJ9.6dGmYsn3P9uze5hbs-_l639BSWU-iTc4ppv2XdQh1MM
+
+
+{
+    "title": "vue",
+    "description": "react",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/606addd88d82ff0fb87bf1f5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZhZGQ2ODhkODJmZjBmYjg3YmYxZjQiLCJpYXQiOjE2MTc2MTYyMzJ9.6dGmYsn3P9uze5hbs-_l639BSWU-iTc4ppv2XdQh1MM
