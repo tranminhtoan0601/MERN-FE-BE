@@ -19,7 +19,7 @@ const PostContextProvider = ({ children }) => {
     message: "",
     type: null,
   });
-  //get all postsasdas
+  //get all postsasdasád
   const getPosts = async () => {
     try {
       const response = await axios.get(`${apiUrl}/posts`);
